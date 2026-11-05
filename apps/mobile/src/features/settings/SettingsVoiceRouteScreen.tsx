@@ -155,7 +155,7 @@ function EnvironmentChoice({
   );
 }
 
-export function SettingsMicrophoneRouteScreen() {
+export function SettingsVoiceRouteScreen() {
   const transcriber = useAtomValue(localVoiceTranscriberAtom);
   const grant = useAtomValue(voiceGrantAtom);
   const { environments, isReady } = useEnvironments();
@@ -206,7 +206,7 @@ export function SettingsMicrophoneRouteScreen() {
   const dragTo = drag === null ? -1 : dragFrom + dropSteps(dragFrom, drag.translation);
 
   return (
-    <SettingsScreen title="Microphone">
+    <SettingsScreen title="Voice">
       <ScrollView
         contentInsetAdjustmentBehavior="automatic"
         showsVerticalScrollIndicator={false}
